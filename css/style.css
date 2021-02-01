@@ -11,7 +11,7 @@ body {
 }
 
 .container {
-    background: #d3d3d3;
+    background: #dad8d8;
     max-width: 100%;
 }
 
@@ -37,8 +37,12 @@ header #top {
 nav {
     background-color: white;
     width: 100%;
-    padding: 20px;
+    padding: 20px 120px;
     list-style: none;
+    -webkit-box-shadow: -1px 9px 17px -4px rgba(153, 151, 153, 1);
+    -moz-box-shadow: -1px 9px 17px -4px rgb(49, 49, 49);
+    box-shadow: -1px 9px 17px -4px rgb(122, 122, 122);
+    z-index: 3;
 }
 
 nav .logo {
@@ -65,39 +69,311 @@ nav .items ul li {
 }
 
 main {
-    background: #d3d3d3;
+    background: #c0c0c0;
     margin: 0;
-    padding: 0;
+    padding: 60px 120px;
 }
 
 main .container {
-    background: white;
+    background: rgba(255, 255, 255, 0);
+    padding: 0;
 }
 
+main .container .sub h5 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+main .container .main h2{
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 90px;
+}
+
+main article{
+    display: flex;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+main article p {
+    padding: 15px 10px;
+    width: fit-content;
+    border: 1px solid  #f1f1f1e8;
+    color: #272a31;
+}
+
+
+
 #program {
-    background: #272a31;
+    background-color: #000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+    color: #d3d3d3;
+    padding: 30px 5px;
+}
+
+#program .programs{
     width: 100%;
-    height: 300px;
+    padding: 10px 100px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+
+#program .programs h3 {
+  font-size: larger;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+}
+
+#program .programs h3::after {
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  padding-top: 10px;
+  border-bottom: 1px solid #ec5242;
+}
+
+#program .programs .put .mide .programe {
+    background-color: #646464c7;
+    padding: 8px;
+    margin: 8px 2px;
+    display: flex;
+    flex-direction: column;
+    width: 18.5%;
+  }  
+
+#program .programs .put .mide .programe .p-icon {
+    fill: #d3d3d3;
+    align-self: center;
     margin: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+#program .programs .put .mide .programe .p-title {
+    font-size: 12px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    color: #ec5242;
+    margin: 0;
+    text-align: center;
+    padding: 8px auto;
+    width: 100%;
+}
+  
+#program .programs .put .mide .programe .p-text {
+    font-size: 11px;
+    padding: 0 2px;
+    justify-content: center;
+    margin: 0;
+    text-align: center;
+    padding: 8px auto;
+}  
+
+#program .programs .put {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#program .programs .put .mide {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+#program .programs .join {
+    display: none;
+}
+  
+#program .programs .join-text {
+    color: white;
+    text-align: center;
+    padding: 20px 0;
 }
 
 #speakers {
-    background: #d3d3d3;
+    padding: 10px;
+    background: #ffffff;
+    max-width: 100%;
+
+}
+
+#speakers .container {
+    padding-bottom: 20px;
+    max-width: 80%;
+    background: none;
+}
+
+#speakers h5 {
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+    color: #272a31;
+  }
+
+#speakers h5::after {
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ec5242;
+}
+
+#speakers .content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px auto;
     width: 100%;
-    height: 400px;
-    margin: 0;
+    margin: 20px;
+    flex-direction: row;
+}
+
+#speakers .speaker {
+    padding: 2px;
+    margin: 4px;
+    display: flex;
+    width: 49%;
+    float: left;
+    border: 1px solid #272a31;
+}
+
+#speakers .speaker .f-share {
+    font-weight: bold;
+}
+
+#speakers .speaker .image {
+    position: relative;
+    padding: 2px;
+    display: block;
+    width: 100%;
+}
+
+#speakers .speaker .image .f-image {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-image: url(/LOUIS-INC/img/box.jpg);
+}
+
+
+#speakers .more {
+    display: none;
 }
 
 #partner {
     background: #272a31;
     width: 100%;
-    height: 150px;
+    padding: 20px auto;
     margin: 0;
 }
 
-footer {
-    background: #d3d3d3;
+#partner .container {
     width: 100%;
-    height: 150px;
+    background: none;
+    padding-top: 20px;
+}
+
+#partner .container h5 {
+    font-weight: bold;
+    padding: 20px auto 10px auto;
+    text-align: center;
+    color: #d3d3d3;
+  }
+
+#partner .container h5::after {
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    width: 30px;
+    padding-top: 20px;
+    border-bottom: 1px solid #ec5242;
+}
+
+#partner .container .place {
+    display: flex;
+    flex-direction: column;
+}
+
+#partner .container.place .partners {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#partner .container .place {
+    padding: 10px 20%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#partner .container .place .partners {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+#partner .container .place .partners .p-logo img {
+    width: 100px;
+    margin: 0 20px;
+}
+
+footer {
+    background: #ffffff;
+    width: 100%;
     margin: 0;
+    padding: 20px 0 0 0;
+}
+
+.foot .f-content .f-logo img {
+    width: 90px;
+    height: 90px;
+    padding: 0;
+    margin: 0 60px 0 60px;
+}
+
+.foot {
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+}
+
+.foot .last {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    padding: 10px 10%;
+}
+
+.foot .last .f-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: auto;
+}
+
+.foot .f-content .f-text {
+    line-height: 10px;
+}
+
+.foot .f-content .f-text .copyright h6 {
+    font-size: 12px;
+}
+
+.foot .f-content .f-text .license p {
+    font-size: 12px;
+    display: unset;
 }
